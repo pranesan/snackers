@@ -417,24 +417,28 @@
       </div>
   
     
-      <div class="right-section">
+    <div class="right-section">
         <h4>Book Your Table Now</h4>
-        <form class="booking-form" id="bookingForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" class="form-input" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" class="form-input" required>
-            
-            <label for="persons">Number of Persons:</label>
-            <input type="number" id="persons" name="persons" class="form-input" required>
-            
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" class="form-input" required>
-            
-            <button type="submit" class="form-button">Book Now</button>
+
+        <!-- Web3 Forms API integration -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                <input type="hidden" name="access_key" value="521f913f-c4d3-4c4e-9062-4fcad9bed381">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+        
+                <label for="persons">Number of Persons:</label>
+                <input type="number" id="persons" name="persons" class="form-input" required>
+        
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" class="form-input" required>
+        
+                <button type="submit" class="form-button">Book Now</button>
+            </div>
         </form>
-    </div>
+        
   </div>
   </section>
   <script>
