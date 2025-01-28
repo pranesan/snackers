@@ -1,0 +1,667 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+.nav1-section h1 {
+    font-family: 'Play', sans-serif; /* Use Play font */
+    font-size: 3rem; /* Font size */
+    color: #004466; /* Sets text color */
+    text-transform: uppercase; /* Optional: Makes text uppercase */
+    letter-spacing: 2px; /* Optional: Adds spacing between letters */
+    margin-top: -60px; /* Moves the text slightly upwards */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    margin-left: 40px;
+  }
+  .logo .red {
+    color: rgb(229, 48, 48);
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #FEF0ED, #ACE3F8);
+    margin: 0;
+    padding: 0;
+    align-items: flex-start; 
+
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+
+  .nav a {
+    color: #322b2b;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  .nav a:hover {
+    color: #da4c19;
+  }
+
+  .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search input {
+    padding-left: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    color: #aaa;
+    font-size: 16px;
+  }
+
+  .search button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .search button:hover {
+    background-color: #e63900;
+  }
+
+  @media (max-width: 768px) {
+    .nav {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .search input {
+      width: 150px;
+    }
+  }
+  .content {
+    padding-left: 50px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-top: 190px;
+    color: #322927;
+}
+
+h2 {
+    font-size: 4em;
+    margin-bottom: 3px;
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    font-size: 5em;
+    margin-bottom: 11px;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #322927;
+}
+
+.image-container {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    margin-left: auto; /* Push the container to the right */
+    margin-left: 790px; /* Optional: Adjust for some spacing from the right edge */
+    margin-top: -11.5cm; /* Move the image down by 3cm from the top */
+}
+
+
+.pizza-image {
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+.red-text {
+    color: rgb(220, 54, 54);
+}
+.button-container{
+    margin-top: 20px;
+    display:flex;
+    margin-left: 1.3cm;
+    gap:20px;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #004466;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: #0088cc;
+    transform: scale(1.05);
+}
+
+/* Order Now button styles */
+.order-now {
+    background-color: #ff4500; /* Orange color for the Order Now button */
+}
+
+/* Book a Table button styles */
+.book-table {
+    background-color: #4caf50; /* Green color for the Book a Table button */
+}.services-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Increases the gap between the boxes */
+    padding: 40px; /* Adds more padding around the section */
+    background-color: #e0f7fa; /* Light teal background */
+    border-radius: 0px; /* Rounds the corners of the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.service-box {
+    flex: 1; /* Keeps boxes equal-sized */
+    padding: 40px; /* Increases the size of each box */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.service-box i {
+    font-size: 40px; /* Icon size */
+    color: #00bcd4; /* Default teal color for icons */
+    margin-bottom: 15px; /* Add spacing below the icon */
+    display: inline-block;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.service-box h3 {
+    font-size: 22px; /* Larger font for headings */
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.service-box p {
+    font-size: 16px; /* Slightly larger font for descriptions */
+    color: #666;
+    line-height: 1.6; /* Improves readability */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.service-box:hover {
+    transform: translateY(-10px); /* Move the box upward slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+    background-color: #fdad00; /* Subtle background change */
+}
+
+.service-box:hover i {
+    color: #ffffff; /* Changes icon color to a vibrant orange on hover */
+}
+
+.service-box:hover h3,
+.service-box:hover p {
+    color: #ffffff; 
+}
+.about-us-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.images-container {
+    flex: 1; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(2, auto);
+    gap: 15px; 
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+
+.image1 {
+    grid-row: span 2; 
+}
+
+.image1 img {
+    height: 800px; 
+}
+
+.image2 {
+    height: 300px; 
+}
+
+.image2 img {
+    height: 300px; 
+    margin-bottom: -5cm;
+}
+
+.image3 {
+    height: 350px; 
+}
+
+.image3 img {
+    height: 350px;
+}
+
+.content-container {
+    flex: 1; 
+    margin-top: -6cm;
+}
+
+.content-container h2 {
+    font-family: 'Great Vibes', cursive; 
+    font-size: 40px;
+    font-weight: normal; 
+    color: #FFD700; 
+    margin-bottom: -13px;
+    font-weight: bold;
+}
+
+.content-container p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}/* Style for the specific paragraph */
+p.welcome-text {
+    font-family: 'Inter', sans-serif; /* Use the desired font */
+    font-size: 30px; /* Increase the font size for this specific paragraph */
+    font-weight: bold;
+    color: #000000; /* Yellow color */
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the logo */
+.logo {
+    width: 40px; /* Adjust the logo size */
+    height: 40px; /* Adjust the logo size */
+    margin: 0 8px; /* Space between the text and the logo */
+}
+/* Styling for the new section */
+.welcome-text {
+    font-size: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-text .logo {
+    margin-left: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; /* Increased margin to prevent overlap */
+}
+
+.box {
+    width: 45%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box h3 {
+    font-size: 24px;
+    color: #004466;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #555;
+}
+
+.experience {
+    background-color: #e0f7fa;
+}
+
+.chefs {
+    background-color: #fff3e0;
+}
+.recipe-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.recipe-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-section .section-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+.recipe-card h3 {
+    font-size: 20px;
+    color: #444;
+    margin: 15px 0;
+}
+
+.recipe-card p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+.nav1-section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70cm);
+    margin: 0; 
+    padding: 0; 
+    margin-top: 2cm;
+    background-color: #ebeaea; 
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Navigation list styles */
+.nav1 {
+    display: flex; /* Aligns items in a single row */
+    gap: 50px; /* Equal spacing between icons */
+    list-style: none; /* Removes bullets */
+    padding: 0; /* No padding */
+    margin-top: 1cm; /* No margin */
+   
+}
+
+/* Individual nav items */
+.nav1-item {
+    display: flex; /* Aligns icon and text */
+    flex-direction: column; /* Stacks icon and text vertically */
+    align-items: center; /* Centers icon and text */
+    gap: 10px; /* Space between icon and text */
+    font-size: 14px; /* Text size */
+    color: #333; /* Text color */
+    cursor: pointer; /* Adds pointer cursor */
+}
+
+.nav1-item img {
+    width: 40px; /* Fixed size for icons */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular icons */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.nav1-item img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+.nav1-section {
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    height: 100vh; /* Makes the section take the full viewport height */
+    background-color: #faf8f8; /* Optional: Adds a light background color */
+    transform: translateY(-2.1cm);
+    height: 30vh;
+
+}
+@font-face {
+    font-family: 'Playwrite România Guides';
+    src: url('/path-to-your-font/PlaywriteRomâniaGuides.ttf') format('truetype'); /* Adjust file path */
+}
+
+.nav1-section h1 {
+    font-family: 'Playwrite România Guides', serif; /* Change the font style */
+    font-size: 3rem; /* Increases font size */
+    color: #004466; /* Sets text color */
+    text-transform: uppercase; /* Optional: Makes text uppercase */
+    letter-spacing: 2px; /* Optional: Adds spacing between letters */
+    margin-top: -60px;
+}
+
+  .nav1-item {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+  }
+  
+  .dishes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 2px;
+    margin-left: 6cm;
+  }
+  
+  .dishes-card-container {
+    display: none;
+    flex-wrap: wrap;
+    gap: 110px;
+    margin-left: -4cm;
+    
+  }
+  
+  .dish-card {
+    width: 250px;
+    height: 300px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dish-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: 8px solid #ffffff; /* Static border around the image */
+}
+
+  .dish-info {
+    padding: 10px;
+  }
+  
+  .dish-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .dish-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  p.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00b300;
+  }
+  
+  /* General Body Styles */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 1cm; /* Move the container section down by 6 cm */
+}
+
+.left-section {
+    flex: 1;
+    padding: 10px;
+    background-color: #f4f4f4;
+    
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    height: 68vh;
+   
+}
+
+h4 {
+    font-size: 1.5rem;  /* 1rem equals the font size of the root element (usually 16px) */
+    margin-bottom: 45px;
+    color: #000000;
+    margin-right: 60px;
+}
+/* Style for the booking form */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds spacing between elements */
+    max-width: 400px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -1cm;
+}
+
+/* Style for the form inputs */
+.booking-form .form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Style for the button */
+.booking-form .form-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.booking-form .form-button:hover {
+    background-color: #0056b3;
+}
+
+.review-card:hover {
+    transform: scale(1.05); /* Slightly increases the size of the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}

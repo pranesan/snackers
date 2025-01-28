@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Section</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<script src="D:\snackers\booking-form\server.js"></script>
+  <script>
+    function toggleDishes(dishType) {
+ 
+  const allDishes = document.querySelectorAll('.dishes-card-container');
+  allDishes.forEach(dish => dish.style.display = 'none');
+
+  
+  const selectedDishes = document.getElementById(dishType);
+  selectedDishes.style.display = 'flex'; 
+}
+
+  </script>
+ 
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Snacke<span class="red">rs</span>.</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about-us">about us</a>
+      <a href="#recipies">Recipies</a>
+      <a href="#contact">Contact</a>
+      <div class="search">
+        <input type="text" placeholder="Search...">
+        <span class="search-icon">🔍</span>
+        <button>Go</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Welcome🔥</h1>
+    <h2>Enjoy your</h2>
+    <h3>Delicious <span class="red-text">Food</span></h3>
+    <p>Some content goes here, describing the delicious food you're about to enjoy!</p>
+    <p>Some content goes here, describing the delicious food you're about to enjoy!</p>
+  </div>
+  
+  <div class="button-container">
+    <a href="#book-table">
+      <button class="btn book-table">Book a Table</button>
+  </a>
+  </div>
+
+  <div class="image-container">
+    <img src="D:\snackers\img\hero.png" alt="Pizza" class="pizza-image">
+  </div>
+
+  <section class="services-section" id="services">
+    <div class="service-box">
+      <i class="fas fa-utensils"></i>
+      <h3>Quality of Food</h3>
+      <p>We ensure the best quality ingredients for every dish.</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-hat-chef"></i>
+      <h3>Master Chefs</h3>
+      <p>Our chefs are highly skilled with years of experience.</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-shopping-cart"></i>
+      <h3>Online Order</h3>
+      <p>Order your favorite dishes online from the comfort of your home.</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-clock"></i> 
+      <h3>24/7 Services</h3>
+      <p>We are here to serve you round the clock, anytime, anywhere.</p>
+    </div>
+  </section>
+  <section class="about-us-section" id="about-us">
+    <div class="images-container">
+      <div class="image-box image1">
+        <img src="D:\snackers\img\2022-02-03.jpg" alt="Image 1">
+      </div>
+      <div class="image-box image2">
+        <img src="D:\snackers\img\2022-07-06.jpg" alt="Image 2">
+      </div>
+      <div class="image-box image3">
+        <img src="D:\snackers\img\2024-11-09.jpg" alt="Image 3">
+      </div>
+    </div>
+    <div class="content-container">
+      <h2>About Us ------</h2>
+      <p class="welcome-text">Welcome to <img src="D:\resatarent-website-main\img\images-removebg-preview (1).png" alt="Logo" class="logo"> Snackers</p>
+      <p>Welcome to our restaurant, where tradition meets innovation! We take pride in serving the finest dishes made from high-quality, fresh ingredients. Our team of talented chefs ensures that every meal is an unforgettable experience. </p>
+      <p>
+        Whether you’re here for a quick bite or a grand celebration, we promise to provide exceptional service and mouthwatering flavors. Come and explore our cozy ambiance and discover why we’re a favorite dining destination in the city!
+      </p>
+      <div class="boxes-container">
+        <div class="box experience">
+          <h3>8 Years of Experience</h3>
+          <p>We have been serving the finest meals for 8 years, blending tradition and innovation to bring you the best dining experience.</p>
+        </div>
+        <div class="box chefs">
+          <h3>10 Popular Chefs</h3>
+          <p>Our talented chefs are the heart of our kitchen, crafting exquisite dishes with passion and expertise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="nav1-section" id="recipies">
+    <h1>Our Recipies</h1>
+    <ul class="nav1">
+      <li class="nav1-item" onclick="toggleDishes('burger-dishes')">
+        <img src="D:\snackers\img\burger.png" alt="Burger Icon" style="width: 40px; height: auto; border-radius: 50%;">
+        <span>Burger</span>
+      </li>
+      <li class="nav1-item" onclick="toggleDishes('chicken-dishes')">
+        <img src="D:\snackers\img\fried-chicken.png" alt="Chicken Icon" style="width: 40px; height: auto; border-radius: 50%;">
+        <span>Chicken</span>
+      </li>
+      <li class="nav1-item" onclick="toggleDishes('rice-dishes')">
+        <img src="D:\snackers\img\barbeque.png" alt="Rice Icon" style="width: 40px; height: auto; border-radius: 50%;">
+        <span>BBQ</span>
+      </li>
+      <li class="nav1-item" onclick="toggleDishes('biryani-dishes')">
+        <img src="D:\snackers\img\biryani (1).png" alt="Biryani Icon" style="width: 40px; height: auto; border-radius: 50%;">
+        <span>Biryani</span>
+      </li>
+    </ul>
+  </section>
+  
+ 
+  <section class="dishes-container">
+    <div id="burger-dishes" class="dishes-card-container">
+      <div class="dish-card">
+        <img src="D:\snackers\img\Big-double-cheeseburger-f437c9c.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Classic Cheeseburger</h3>
+          <p>A beef patty with cheese, lettuce, tomato, pickles, onions, and ketchup/mustard.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>
+      <div class="dish-card">
+        <img src="D:\snackers\img\l-intro-1662064407.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Veggie Burger</h3>
+          <p>A plant-based patty made from vegetables, legumes, or grains like black beans, lentils.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>
+      <div class="dish-card">
+        <img src="D:\snackers\img\Big-double-cheeseburger-f437c9c.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Chicken Burger</h3>
+          <p>A grilled or crispy chicken breast served in a burger bun with traditional toppings </p>
+          <p class="price">₹200</p>
+        </div>
+      </div>
+      <div class="dish-card">
+        <img src="D:\snackers\img\l-intro-1662064407.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Bacon Cheeseburger </h3>
+          <p> A classic cheeseburger with crispy bacon added for extra flavor.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>
+      <div class="dish-card">
+        <img src="D:\snackers\img\a-flying-burger-with-all-the-layers-ai-generative-free-photo.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>BBQ Burger</h3>
+          <p>A beef patty topped with barbecue sauce, caramelized onions, cheese, and bacon.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\ultimate-southern-burger_batch64_beauty01-86-b9c26e256dd34e39b6c0cfb0c02a9fef.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Sliders</h3>
+          <p>Mini burgers, usually served as a group of small-sized burgers, often with a variety of fillings.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+      <div class="dish-card">
+        <img src="D:\snackers\img\0d5a917dc4e8ed63e49a1da4101226bd.avif" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Breakfast Burger</h3>
+          <p>A burger that includes a fried egg, bacon, and possibly hash browns, in addition to the regular burger ingredients.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+      <div class="dish-card">
+        <img src="D:\snackers\img\83565509.webp" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Hawaiian Burger</h3>
+          <p>A burger that includes pineapple slices along with other toppings like cheese.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>              
+    </div>
+    <div id="chicken-dishes" class="dishes-card-container">
+      <div class="dish-card">
+        <img src="D:\snackers\img\7.jpeg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Grilled Chicke</h3>
+          <p>Chicken marinated in spices or herbs and then grilled, often served with sides like salad or rice..</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\2.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Fried Chicken</h3>
+          <p>hicken pieces coated in seasoned flour and deep-fried until crispy and golden brown.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\3.jpeg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Chicken Curry</h3>
+          <p>Chicken cooked in a spiced sauce made with tomatoes, onions, and various spices, often served with rice or naan.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\4.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Chicken Tikka</h3>
+          <p> Boneless chicken marinated in yogurt and spices, then grilled or baked, often served as an appetizer</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+      <div class="dish-card">
+        <img src="D:\snackers\img\5.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Chicken Alfredo</h3>
+          <p>A creamy pasta dish made with chicken, garlic, butter, cream, and Parmesan cheese.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\6.webp" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Chicken Parmesan</h3>
+          <p>Breaded and fried chicken cutlets topped with marinara sauce and melted mozzarella cheese, often served with pasta.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\7.jpeg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Chicken Fajitas</h3>
+          <p>Grilled chicken strips served with sautéed peppers, onions.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\1.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Butter Chicken (Murgh Makhani)</h3>
+          <p>A rich and creamy Indian dish where chicken is cooked in a tomato-based sauce.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+    </div>
+    <div id="rice-dishes" class="dishes-card-container">
+      <div class="dish-card">
+        <img src="D:\snackers\img\b2.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Smoked BBQ</h3>
+          <p>Slow-cooked meat in a smoker using wood like hickory, mesquite, or applewood.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\b3.webp" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Grilled BBQ</h3>
+          <p>Meat cooked quickly over high heat on a grill, often using charcoal or gas.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\b4.webp" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Charcoal BBQ</h3>
+          <p>Uses charcoal as the heat source, providing a rich, smoky flavor to the food.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\b5.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Rotisserie BBQ</h3>
+          <p>Meat is slowly rotated on a spit over a flame, allowing for even cooking.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\b6.avif" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Pit BBQ</h3>
+          <p>Traditional method where meat is cooked in an underground pit.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\b7.jpeg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Tandoori BBQ</h3>
+          <p>Indian-style BBQ where meat is marinated in yogurt and spices and cooked in a tandoor (clay oven).</p>
+          <p class="price">₹200</p>
+        </div>
+      </div> 
+      <div class="dish-card">
+        <img src="D:\snackers\img\b5.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Asado (Argentine BBQ)</h3>
+          <p>Large cuts of meat are cooked over an open flame or embers, often accompanied by chimichurri sauce.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>
+      <div class="dish-card">
+        <img src="D:\snackers\img\b2.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Yakitori (Japanese BBQ)</h3>
+          <p>Meat is skewered and cooked on a rotisserie, seasoned simply with salt and served in abundance at Brazilian.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+
+    </div>
+    <div id="biryani-dishes" class="dishes-card-container">
+      <div class="dish-card">
+        <img src="D:\snackers\img\c1.jpeg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Hyderabadi Biryani</h3>
+          <p>One of the most famous, it comes in two styles:
+            Kacchi Biryani: Raw marinated meat.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>
+      <div class="dish-card">
+        <img src="D:\snackers\img\c2.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Lucknowi (Awadhi) Biryani</h3>
+          <p>Mild and aromatic, cooked in the dum pukht style (slow-cooked with a sealed lid).</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+      <div class="dish-card">
+        <img src="D:\snackers\img\c3.avif" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Kolkata Biryani</h3>
+          <p>Influenced by Awadhi biryani, it includes boiled eggs and potatoes with mild spices and a hint of sweetness.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+      <div class="dish-card">
+        <img src="D:\snackers\img\c4.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Dindigul Biryani (Tamil Nadu)</h3>
+          <p>Known for its tangy flavor, this biryani uses small-grain seeraga ination.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+      <div class="dish-card">
+        <img src="D:\snackers\img\c5.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Malabar Biryani (Kerala)</h3>
+          <p>A rich and fragrant biryani made with short-grain rice (kaima rice) and flavored with ghee, fried onions.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+      <div class="dish-card">
+        <img src="D:\snackers\img\c6.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Yakitori (Japanese BBQ)</h3>
+          <p>Meat is skewered and cooked on a rotisserie, seasoned simply with salt and served in abundance at Brazilian.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+      <div class="dish-card">
+        <img src="D:\snackers\img\c7.jpg" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Ambur Biryani (Tamil Nadu)</h3>
+          <p>A simple biryani made with seeraga samba rice, red chilies, and a distinct smoky flavor.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>  
+      <div class="dish-card">
+        <img src="D:\snackers\img\c8.webp" alt="Burger 1" class="dish-img">
+        <div class="dish-info">
+          <h3>Thalassery Biryani (Kerala)</h3>
+          <p>Made with fragrant jeerakasala rice, it's mildly spiced and often includes fried onions, nuts, and raisins.</p>
+          <p class="price">₹200</p>
+        </div>
+      </div>    
+    </div>
+  </section>
+  <section>
+    <section style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center;" id="book-table">
+      <h2 class="section-heading" style="font-size: 60px; font-weight: bold; margin: 0; color: #333; padding-top: 60px;">
+          Book Your Table
+      </h2>
+    <div class="container">
+     
+      <div class="left-section">
+        <iframe width="995" height="515" src="https://www.youtube.com/embed/I41jaJNogoI?si=-TcW36ONPQRbbb_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+  
+    
+      <div class="right-section">
+        <h4>Book Your Table Now</h4>
+        <form class="booking-form" id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+            
+            <label for="persons">Number of Persons:</label>
+            <input type="number" id="persons" name="persons" class="form-input" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" class="form-input" required>
+            
+            <button type="submit" class="form-button">Book Now</button>
+        </form>
+    </div>
+  </div>
+  </section>
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            persons: document.getElementById('persons').value,
+            date: document.getElementById('date').value
+        };
+
+        try {
+            const response = await fetch('http://localhost:3000/book-table', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                alert('Booking saved successfully!');
+                document.getElementById('bookingForm').reset();
+            } else {
+                alert('Failed to save booking.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred.');
+        }
+    });
+</script>
+
+  <section class="reviews-section" style="padding: 40px 20px;">
+    <h2 class="section-heading" style="font-size: 30px; font-weight: bold; text-align: center; color: #333; margin-bottom: 90px;">
+        <i class="fas fa-comments" style="color: #007bff; margin-right: 10px;"></i> <!-- Font Awesome icon -->
+        Customer Reviews
+    </h2>
+    <div class="reviews-container" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+     
+        <div class="review-card" style="background-color: white; padding: 20px; width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="D:\snackers\img\balaji.jpg" alt="Customer 1" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;">
+            <div class="stars" style="margin-bottom: 10px;">
+                <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <!-- 5 star rating -->
+            </div>
+            <p style="font-size: 16px; color: #555;">"This service is amazing! I had a wonderful experience."</p>
+            <p style="font-weight: bold; color: #333;">Balaji P</p>
+            <p style="font-size: 14px; color: #777;">Software Engineer</p>
+        </div>
+
+      
+        <div class="review-card" style="background-color: white; padding: 20px; width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="D:\snackers\img\bhavaneeh.jpg" alt="Customer 2" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;">
+            <div class="stars" style="margin-bottom: 10px;">
+                <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- 4 star rating -->
+            </div>
+            <p style="font-size: 16px; color: #555;">"Great quality, but I would love faster delivery."</p>
+            <p style="font-weight: bold; color: #333;">Bhavaneesh R V</p>
+            <p style="font-size: 14px; color: #777;">Product Manager</p>
+        </div>
+
+       
+        <div class="review-card" style="background-color: white; padding: 20px; width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="D:\snackers\img\ajmal.jpg" alt="Customer 3" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;">
+            <div class="stars" style="margin-bottom: 10px;">
+                <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <!-- 5 star rating -->
+            </div>
+            <p style="font-size: 16px; color: #555;">"Fantastic experience. Highly recommend to everyone!"</p>
+            <p style="font-weight: bold; color: #333;">Ajmal</p>
+            <p style="font-size: 14px; color: #777;">UI/UX Designer</p>
+        </div>
+
+        <div class="review-card" style="background-color: white; padding: 20px; width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <img src="D:\snackers\img\IMG_8771.jpg" alt="Customer 4" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;">
+            <div class="stars" style="margin-bottom: 10px;">
+                <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9734;&#9734;</span> <!-- 3 star rating -->
+            </div>
+            <p style="font-size: 16px; color: #555;">"The product was good, but the customer service could be improved."</p>
+            <p style="font-weight: bold; color: #333;">Nandhakumar</p>
+            <p style="font-size: 14px; color: #777;">Marketing Specialist</p>
+        </div>
+    </div>
+</section>
+<section class="contact-section" style="padding: 40px 20px; background-color: #f9f9f9; text-align: center;"id=contact>
+  <h2 class="section-heading" style="font-size: 30px; font-weight: bold; color: #333; margin-bottom: 20px;">Contact Us</h2>
+  
+  <div class="contact-info" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; color: #555;">Email: <a href="mailto:snakcers@restaurant.com" style="color: #007bff; text-decoration: none;">snackers@restaurant.com</a></p>
+      <p style="font-size: 18px; color: #555;">Phone: <a href="tel:8778581484" style="color: #007bff; text-decoration: none;">63801 95907</a></p>
+      <p style="font-size: 18px; color: #555;">Kumaran Nagar, Erode, Vidya Nagar East, Tamil Nadu 638002</p>
+      <p style="font-size: 18px; color: #555;">Opening Hours:</p>
+      <p style="font-size: 18px; color: #555;">Mon - Fri: 10:00 AM - 9:00 PM</p>
+      <p style="font-size: 18px; color: #555;">Sat - Sun: 12:00 PM - 10:00 PM</p>
+  </div>
+  
+  <div class="footer" style="margin-top: 40px; color: #777;">
+      <p>&copy; 2025 snackers. All Rights Reserved.</p>
+  </div>
+</section>
+
+
+</body>
+</html>
